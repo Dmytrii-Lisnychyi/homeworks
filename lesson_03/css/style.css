@@ -1,0 +1,61 @@
+@import url("reset.css");
+
+body {
+	color: rgb(185, 173, 0);
+}
+
+h1,
+h2 {
+	margin-top: 15px;
+	padding-bottom: 5px;
+
+	color: rgb(62, 10, 121);
+}
+
+li.section__item h2 {
+color: rgb(46, 0, 252);
+}
+
+#text {
+	color: rgb(1, 212, 8);
+}
+
+.title__container{
+	color: rgb(61, 57, 0);
+}
+
+.menu__item > a {
+	color: #000000;
+}
+
+[class*="ub-item"]{
+	color: rgb(62, 172, 18);
+}
+
+.text ~ p{
+	color: rgb(21, 83, 21);
+}
+
+.text + p{
+	color: rgb(75, 75, 0);
+}
+
+.section__list * {
+	color: green;
+}
+
+.text-orange {
+	color: orange;
+}
+
+.section__item > p {
+	color: #16606d;
+}
+
+.text__color.red {
+	color: red;
+}
+
+.text__color .blue {
+	color: blue;
+}
