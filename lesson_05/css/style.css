@@ -1,0 +1,177 @@
+@import url("fonts.css");
+
+@import url("reset.css");
+
+
+body {
+	font-family: "Circular Std" ,sans-serif;
+	font-size: 14px;
+	color: #000000;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+}
+
+[class*="__container"] {
+	max-width: 1080px;  /*1050 + 15 + 15*/
+	margin: 0  auto;
+	padding: 0 15px;
+}
+
+/*========================================================*/
+
+.menu {
+	background-color: #4f2a74;
+}
+
+.menu__list {
+	align-items: center;
+}
+
+.menu__item {
+	display: inline-block;
+	min-width: 49%;
+}
+
+.menu__link {
+	font-size: 50px;
+	font-weight: bold;
+	line-height: normal;
+	text-transform: uppercase;
+	text-align: center;
+	color: #191677;
+	min-width: 100%;
+}
+
+.section-1 {
+	margin-top: -112px;
+	padding: 112px 0;
+	background-color: #231F8B;
+}
+
+.section-1__first-content {
+	margin-bottom: 70px;
+}
+
+.section-1__over-text {
+	font-family: Montserrat;
+   font-weight: 700;
+   line-height: 24px; 
+   letter-spacing: 0.2px;
+	color: #5A54F2;
+	margin-bottom: 10px;
+}
+
+.section-1__first-content > h1{
+	font-family: "Circular Std" ,sans-serif;
+	font-size: 36px;
+	color: #fff;
+	margin-bottom: 10px;
+}
+
+.section-1__first-content > p{
+	line-height: 1.43;
+	letter-spacing: 0.2;
+	color: #fff;
+}
+
+.card-list {
+	font-size: 0;
+}
+
+.card-list__item {
+	background-color: #fff;
+	font-family: "Circular Std", Sans-Serif;
+	font-size: 14px;
+	display: inline-block;
+	vertical-align: top;
+	max-width: 230px;
+	height: 288px;
+	padding: 35px 40px;
+}
+
+.card-list__item ~ * {
+	margin-left: 39px;
+}
+
+.card-list__icon ~ * {
+	margin-top: 20px;
+}
+
+.card-list__line {
+	display: inline-block;
+	background-color: #E74040;
+	height: 2px;
+	width: 50px;
+}
+
+.color-item {
+	background-color: #5A54F2;
+	color: #fff;
+}
+
+.color-item .card-list__line {
+	background-color: #fff;
+}
+
+.card-list__item.down {
+	margin-top: 48px;
+}
+
+/*=====================================================*/
+
+.section-2 {
+	padding: 100px 0;
+}
+
+.block {
+	background-color: wheat;
+	overflow: auto;
+	width: 500px;
+	height: 200px;
+	padding: 15px 30px 15px 30px;
+	margin: 0 auto;
+}
+
+.block__content > h6{
+	white-space: nowrap;
+}
+
+.block__content {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.button {
+	background-color: #15706d;
+	width: 200px;
+	height: 50px;
+	align-items: center;
+	padding: 13px 0;
+	margin: -30px auto 0;
+}
+
+.button > p {
+	color: #05ffde;
+	letter-spacing: 5px;
+	font-size: 30px;
+	text-align: center;
+}
+
+/*========================================================*/
+
+.nav {
+	background-color: #0c4720;
+}
+
+
+.nav__link {
+	font-size: 50px;
+	font-weight: bold;
+	line-height: normal;
+	text-align: center;
+	color: #17a4bd;
+	min-width: 100%;
+}
