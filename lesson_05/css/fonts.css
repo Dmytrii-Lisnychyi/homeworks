@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
+
+
+
+
+@font-face {
+	font-family: 'Circular Std';
+	src: url('../fonts/circular-normal.woff2');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Circular Std';
+	src: url('../fonts/circular-bold.woff2');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
