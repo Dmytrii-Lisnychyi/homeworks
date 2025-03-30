@@ -29,18 +29,21 @@ body {
 }
 
 .menu__list {
-	padding: 20px 50px;
+	margin: 0 -10px;
+	font-size: 0;
 }
 
 .menu__item {
 	display: inline-block;
-	min-width: 49.84%;
+	padding: 0 10px;
+	width: 50%;
 }
 
 .menu__link {
-	display: block;
+	width: 100%;
 	text-align: center;
 	font-size: 50px;
+	padding: 20px 0;
 }
 
 .header {
@@ -77,8 +80,8 @@ body {
 	margin-bottom: 14px;
 	padding-left: 28px;
 	padding-top: 3px;
-	min-height: 26px;
-	background: url('../img/check.svg') 0 0 / 20px no-repeat;
+	min-height: 20px;
+	background: url('../img/check.svg') 0 0/ 20px no-repeat;
 }
 
 /*=====================================================================================*/
@@ -94,34 +97,29 @@ body {
 	background: #302C42 url('../img/decor_wave.png') center 40% / auto no-repeat;
 }
 
+.section-2__inner {
+	font-size: 0;
+	margin: 0 -5px;
+}
+
 .picture,
 .about {
 	display: inline-block;
+	vertical-align: middle;
+	width: 50%;
+	padding: 0 5px;
 	font-size: 14px;
 }
 
-.picture {
-	padding: 0 10px;
-	margin-right: 96px;
-	vertical-align: middle;
-}
-
-.picture__inner {
-	min-height: 557px;
-	min-width: 524px;
+.picture__wrap {
+	height: 557px;
+	width: 80.615385%; /* 524/650 */
 	border-radius: 43% 19%;
-	background: url('../img/about.jpg') 0 0 / cover no-repeat;
+	background: url('../img/about.jpg') center / cover no-repeat;
 	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.about {
-	display: inline-block;
-	vertical-align: middle;
-	min-width: 630px;
-}
-
 .about__content {
-	max-width: 630px;
 	color: rgba(255, 255, 255, 0.808);
 }
 
@@ -163,19 +161,13 @@ body {
 }
 
 /*=========================================================================*/
-
-.contacts {
-	margin-top: -10px;
-	padding-top: 10px;
-	padding-bottom: 30px;
+.section-3 {
+	background-color: #302C42;
 }
 
-.contacts__list {
+
+.contacts {
 	font-size: 0;
-	padding: 30px 53px;
-	background: radial-gradient(circle, rgba(58, 52, 86, 0.95) 0%, #211E2E 100%);
-	border-radius: 90px;
-	box-shadow: 0px 4px 4px 0px rgba(192, 183, 232, 0.01);
 }
 
 .contacts__item h2 {
@@ -188,24 +180,26 @@ body {
 	color: rgba(255, 255, 255, 0.699);
 }
 
-.section-3 {
-	background-color: #302C42;
+.contacts__list {
+	overflow: hidden;
+	background: radial-gradient(circle, rgba(58, 52, 86, 0.95) 0%, #211E2E 100%);
+	border-radius: 90px;
+	box-shadow: 0px 4px 4px 0px rgba(192, 183, 232, 0.01);
+	padding: 26px 55px 26px 0;
 }
 
-
 .contacts__item {
-	display: inline-block;
 	font-family: "Montserrat", sans-serif;
-	vertical-align: middle;
-	font-size: 14px;
-	color: #ffffff;
-	margin-right: 53px;
-	max-width: 332px;
+	display: inline-block;
+	width: 33.333%;
+	vertical-align: top;
+	padding-left: 70px;
 }
 
 [class*="contacts__link"] {
-	min-width: 332px;
-	padding: 25px 53px 25px 70px;
+	padding: 27px 70px;
+	font-size: 14px;
+	color: #ffffff;
 	border-right: 1px solid rgba(192, 183, 232, 0.33);
 }
 
@@ -218,9 +212,8 @@ body {
 }
 
 .contacts__link-mail {
-	border-right: none;
+	border-right: 0;
 	padding-right: 0;
-	margin-right: 0;
 	background: url('../img/mail.svg') 0 50% / 50px no-repeat;
 }
 
