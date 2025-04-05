@@ -1,0 +1,162 @@
+@import url("reset.css");
+
+@import url("game.css");
+
+body {
+	font-family: "Inter", sans-serif;
+	font-size: 15px;
+	color: #4F4F4F;
+	line-height: normal;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+}
+
+[class*="__container"] {
+	max-width: 1230px;
+	/*1200 + 15 + 15*/
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+
+
+/*=========================================================================*/
+
+.page-1 {
+	background-color: #412672;
+}
+
+
+.block {
+	padding: 61px 0;
+}
+
+.block>h1 {
+	font-size: 38px;
+	color: #fff;
+	line-height: normal;
+	margin-bottom: 31px;
+}
+
+.block__cards {
+	margin: 0 -5px;
+	font-size: 0;
+}
+
+.block__inner {
+	display: inline-block;
+	width: 33.333%;
+	vertical-align: top;
+	padding: 10px;
+	font-size: 0;
+}
+
+.card {
+	display: block;
+	min-height: 476px;
+	padding: 20px;
+	font-size: 15px;
+	background: #fff;
+	box-shadow: 0px 384px 108px 0px rgba(0, 0, 0, 0.00), 0px 246px 98px 0px rgba(0, 0, 0, 0.01), 0px 138px 83px 0px rgba(0, 0, 0, 0.05), 0px 62px 62px 0px rgba(0, 0, 0, 0.09), 0px 15px 34px 0px rgba(0, 0, 0, 0.10);
+}
+
+.card>*:not(:last-child) {
+	margin-bottom: 16px;
+}
+
+.card__img>img {
+	height: 266px;
+	width: 100%;
+}
+
+.card>h2 {
+	font-size: 22px;
+	font-weight: 600;
+	line-height: normal;
+	color: #000;
+}
+
+.card>p {
+	line-height: 1.27;
+	min-height: 100px;
+}
+
+.card__link {
+	display: inline-block;
+	margin-right: 5px;
+	line-height: 1.27;
+	color: #FE3F3F;
+}
+
+.card__link:last-child {
+	margin-right: 0;
+}
+
+.card__link:hover {
+	color: #9c0f0f;
+}
+
+.card:hover {
+	background-color: #FFBE48;
+}
+
+
+/*=====================================================*/
+
+.page-2 {
+	color: #412672;
+}
+
+.page-2__content {
+	padding: 100px 0;
+	max-width: 518px;
+	line-height: normal;
+}
+
+
+.page-2__content>* {
+	margin-bottom: 20px;
+}
+
+.page-2__content>*:last-child {
+	margin-bottom: 0;
+}
+
+.page-2__content>h2 {
+	font-size: 34px;
+}
+
+
+
+.page-2__content>p {
+	font-size: 22px;
+}
+
+.page-2__content>ul>li {
+	padding-left: 50px;
+	color: #4F4F4F;
+	font-size: 20px;
+	margin-bottom: 21px;
+}
+
+.page-2__content>ul>li {
+	padding-left: 50px;
+}
+
+.page-2__content>ul>li:last-child {
+	margin-bottom: 0;
+}
+
+.page-2__content>ul>li::before {
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	width: 25px;
+	height: 25px;
+	margin-right: 25px;
+	margin-left: -50px;
+	background: url('../img/check.svg') center / 21px no-repeat;
+}

@@ -1,0 +1,159 @@
+@import url("reset.css");
+
+.wrapper {
+   min-height: 100%;
+   overflow: clip;
+}
+
+[class*="__container"] {
+   max-width: 1230px;
+   /*1270 + 15 + 15*/
+   margin: 0 auto;
+   padding: 0 15px;
+}
+
+.game {
+   background: url('../img/lego.jpg') center / cover no-repeat;
+}
+
+.game__body {
+   width: 1000px;
+   margin: 0 auto;
+   padding: 0 0 20px 0;
+}
+
+.game__item>p {
+	font-family: sans-serif;
+   width: 250px;
+   margin: 0 auto;
+   font-size: 50px;
+   font-weight: bold;
+   text-transform: uppercase;
+   color: #e627d9;
+   background-color: #400b66;
+   text-align: center;
+   padding: 5px 0;
+   border-radius: 20px;
+}
+
+.game__item:not(:first-child, :last-child) {
+   height: 30px;
+   width: 500px;
+   background-color: rebeccapurple;
+}
+
+.game__item:not(:first-child, :last-child):nth-child(1n+2) {
+   background-color: yellowgreen;
+}
+
+.game__item:not(:first-child, :last-child):nth-child(2n+3) {
+   background-color: hotpink;
+}
+
+.game__item:not(:first-child, :last-child):nth-child(3n+4) {
+   background-color: #19e3e3;
+}
+
+.game__item:nth-child(2) {
+   height: 100px;
+   width: 30px;
+   margin-left: 480px;
+}
+
+.game__item:nth-child(3) {
+   height: 20px;
+   width: 400px;
+   margin-left: 110px;
+   border-radius: 15px 0 15px 0;
+}
+
+.game__item:nth-child(4) {
+   height: 50px;
+   width: 15px;
+   margin-left: 110px;
+}
+
+.game__item:nth-child(5) {
+   width: 150px;
+   height: 10px;
+   margin-left: 110px;
+   border-radius: 0 15px 0 15px;
+}
+
+
+.game__item:nth-child(6) {
+   width: 10px;
+   height: 20px;
+   margin-left: 250px;
+}
+
+.game__item:nth-child(7) {
+   height: 20px;
+   width: 298px;
+   margin-left: 250px;
+   border-radius: 0 15px 0 15px;
+}
+
+.game__item:nth-child(8) {
+   height: 200px;
+   width: 10px;
+   margin-left: 538px;
+}
+
+.game__item:nth-child(9) {
+   height: 30px;
+   width: 200px;
+   margin-left: 538px;
+   border-radius: 0 15px 0 15px;
+}
+
+.game__item:nth-child(10) {
+   width: 20px;
+   height: 40px;
+   margin-left: 717px;
+}
+
+.game__item:nth-child(11) {
+   height: 20px;
+   width: 500px;
+   margin-left: 238px;
+   border-radius: 15px 0 15px 0;
+}
+
+.game__item:nth-child(12) {
+   height: 40px;
+   width: 5px;
+   margin-left: 238px;
+}
+
+.game__item:nth-child(13) {
+   width: 193px;
+   height: 10px;
+   margin-left: 50px;
+   border-radius: 15px 0 15px 0;
+}
+
+.game__item:nth-child(14) {
+   height: 50px;
+   width: 10px;
+   margin-left: 50px;
+}
+
+.game__item:last-child {
+   text-transform: uppercase;
+   font-size: 50px;
+   color: orangered;
+   background-color: #0cdc9d;
+   letter-spacing: 5px;
+   text-align: center;
+}
+
+.game__item:not(:first-child) {
+   visibility: hidden;
+}
+
+.game__item:hover+.game__item,
+.game__item:hover {
+	cursor: pointer;
+   visibility: visible;
+}
