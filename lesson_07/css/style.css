@@ -67,8 +67,12 @@ body {
 	margin-bottom: 16px;
 }
 
-.card__img>img {
+.card__img {
 	height: 266px;
+}
+
+.card__img>img {
+	height: 100%;
 	width: 100%;
 }
 
