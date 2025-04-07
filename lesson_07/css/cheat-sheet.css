@@ -1,0 +1,262 @@
+@import url('reset.css');
+
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+}
+
+[class*="__container"] {
+	max-width: 1300px;
+	/*1270 + 15 + 15*/
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+/*=======================================================*/
+
+.hero {
+	background-color: #004752;
+	color: rgb(198, 3, 78);
+	font-family: sans-serif;
+	line-height: normal;
+	padding: 20px 0;
+}
+
+.hero__section {
+	padding: 10px 5px;
+	margin-bottom: 5px;
+	border: 1px solid rgb(214, 18, 74);
+	margin: -1px;
+	margin-bottom: 10px;
+}
+
+.hero__section h2 {
+	color: gold;
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+
+.hero__section ul {
+	margin: 0 -5px;
+	font-size: 0;
+}
+
+.hero__section li {
+	display: inline-block;
+	width: 20%;
+	padding: 5px;
+	font-size: 16px;
+	text-align: center;
+}
+
+.hero__section a {
+	padding: 5px 0;
+	width: 100%;
+	background-color: #00ebc8;
+}
+
+.hover li:nth-child(2) a {
+	border: 2px dotted inherit;
+	margin: -2px;
+}
+
+.hover li:first-child a:hover {
+	background-color: #01a48c;
+}
+
+.hover li:last-child a:hover {
+	width: 200px;
+	border-radius: 20px;
+}
+
+.hover li:nth-child(2) a:hover {
+	border: 2px dotted red;
+	margin: -2px;
+}
+
+.hover li:nth-child(3) a:hover {
+	position: relative;
+	top: 3px;
+}
+
+.hover li:nth-child(4) a:hover {
+	font-weight: bold;
+	color: rgb(233, 0, 186);
+	letter-spacing: 5px;
+}
+
+/*=========================================*/
+
+.active li:first-child a:active {
+	background-color: #01a48c;
+}
+
+.active li:last-child a:active {
+	width: 200px;
+	border-radius: 20px;
+}
+
+.active li:nth-child(2) a:active {
+	border: 2px dotted red;
+	margin: -2px;
+}
+
+.active li:nth-child(3) a:active {
+	position: relative;
+	top: 3px;
+}
+
+.active li:nth-child(4) a:active {
+	font-weight: bold;
+	color: rgb(233, 0, 186);
+	letter-spacing: 5px;
+}
+
+/*===========================================*/
+
+.visited li:first-child a:visited {
+	background-color: #008e79;
+}
+
+.visited li:last-child a:visited {
+	background-color: #007082;
+	color: gold;
+}
+
+.visited li:not(:first-child, :last-child) a:visited {
+	color: rgb(3, 0, 53);
+}
+
+/*======================================*/
+
+.focus li:first-child a:focus {
+	background-color: #01a48c;
+}
+
+.focus li:last-child a:focus {
+	width: 200px;
+	border-radius: 20px;
+}
+
+.focus li:nth-child(2) a:focus {
+	border: 2px dotted red;
+	margin: -2px;
+}
+
+.focus li:nth-child(3) a:focus {
+	position: relative;
+	top: 3px;
+}
+
+.focus li:nth-child(4) a:focus {
+	font-weight: bold;
+	color: rgb(233, 0, 186);
+	letter-spacing: 5px;
+}
+
+/*===================================================*/
+
+
+.hover:target,
+.active:target,
+.visited:target,
+.focus:target,
+.target:target {
+	background-color: #007587;
+	outline: 10px solid rgb(180, 168, 0);
+}
+
+
+/*======================================================*/
+
+
+.block-1 {
+	background-color: #140f3a;
+}
+
+.block-1__content {
+	max-width: 610px;
+	padding: 40px 0;
+	margin: 0 auto;
+}
+
+.block-1__item {
+	border: 2px solid darkorange;
+	margin: -2px;
+	padding: 20px 5px 15px 5px;
+	margin-bottom: 10px;
+	font-size: 0;
+}
+
+.block-1__item:last-child{
+	margin-bottom: 0;
+}
+
+.block-1__item>h2 {
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: 10px;
+	font-size: 22px;
+	font-weight: 700;
+	color: gold;
+	width: 32%;
+	min-width: 150px;
+}
+
+.block-1__sub-list {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 0;
+	width: 68%;
+}
+
+.block-1__sub-list>li {
+	display: inline-block;
+	border: 25px solid #0ddd9f2d;
+	margin-right: 20px;
+	margin-bottom: 5px;
+}
+
+.block-1__item li:last-child{
+	margin-right: 0;
+}
+
+.first-child>li:first-child {
+	border-color: #0ddd9e;
+}
+
+.last-child>li:last-child {
+	border-color: #0ddd9e;
+}
+
+.nth-child-2>li:nth-child(2) {
+	border-color: #0ddd9e;
+}
+
+.nth-last-child-2>li:nth-last-child(2) {
+	border-color: #0ddd9e;
+}
+
+.nth-child-odd>li:nth-child(odd) {
+	border-color: #0ddd9e;
+}
+
+.nth-child-even>li:nth-child(even) {
+	border-color: #0ddd9e;
+}
+
+.nth-child-n4>li:nth-child(n+4) {
+	border-color: #0ddd9e;
+}
+
+.nth-child-3n-1>li:nth-child(3n-1) {
+	border-color: #0ddd9e;
+}
+
+.nth-child-3n1>li:nth-child(3n+1) {
+	border-color: #0ddd9e;
+}
+
+.nth-child-4n>li:nth-child(4n) {
+	border-color: #0ddd9e;
+}
