@@ -1,0 +1,85 @@
+@import url("reset.css");
+
+body {
+	font-family: "Inter", sans-serif;
+	color: #4F4F4F;
+	line-height: normal;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+}
+
+[class*="__container"] {
+	max-width: 1230px;
+	/*1200 + 15 + 15*/
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+
+
+/*=========================================================================*/
+
+.hero {
+	background-color: rgb(248, 255, 199);
+	padding: 100px 0;
+}
+
+.hero__content {
+	max-width: 700px;
+	overflow: hidden;
+	margin: 0 auto;
+	padding: 20px 10px;
+	border-radius: 30px;
+	background-color: rgb(255, 246, 163);
+	box-shadow: 0px 0px 16px 3px rgba(125, 109, 37, 1);
+	font-size: 0;
+}
+
+.hero__list li {
+	padding: 10px 10px;
+	margin-bottom: 10px;
+	background-color: #ffd64f;
+	border-radius: 20px;
+	font-size: 0;
+}
+
+.hero__list li:last-child {
+	margin-bottom: 0;
+}
+
+.hero__img {
+	display: inline-block;
+	vertical-align: middle;
+	max-width: 100px;
+	margin-right: 50px;
+}
+
+.hero__img>svg {
+	vertical-align: middle;
+}
+
+.hero__list>li>p {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 15px;
+	text-align: center;
+}
+
+.man {
+	border-radius: 30% 0;
+	overflow: hidden;
+}
+
+.nature{
+	overflow: hidden;
+	margin-bottom: 10px;
+	border-radius: 30px;
+	min-width: 100%;
+}
+
+.nature img{
+	width: 100%;
+}
