@@ -76,6 +76,7 @@ body {
 .nature{
 	overflow: hidden;
 	border-radius: 30px;
+	margin-bottom: 20px;
 	min-width: 100%;
 }
 
