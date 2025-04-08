@@ -75,11 +75,26 @@ body {
 
 .nature{
 	overflow: hidden;
-	margin-bottom: 10px;
 	border-radius: 30px;
 	min-width: 100%;
 }
 
+.page__section {
+	margin-bottom: 100px;
+}
+
 .nature img{
 	width: 100%;
+}
+
+picture:not(:last-child){
+	display: block;
+	margin-bottom: 30px;
+}
+
+
+.header,
+.footer {
+	padding: 20px;
+	background-color: rgb(254, 217, 116);
 }
