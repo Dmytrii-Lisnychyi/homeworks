@@ -39,7 +39,7 @@ body {
 }
 
 .hero__list li {
-	padding: 10px 10px;
+	padding: 15px 15px;
 	margin-bottom: 10px;
 	background-color: #ffd64f;
 	border-radius: 20px;
@@ -54,11 +54,9 @@ body {
 	display: inline-block;
 	vertical-align: middle;
 	max-width: 100px;
+	width: 100%;
 	margin-right: 50px;
-}
-
-.hero__img>svg {
-	vertical-align: middle;
+	padding: 10px 0;
 }
 
 .hero__list>li>p {
@@ -68,16 +66,30 @@ body {
 	text-align: center;
 }
 
+.hero__img>img{
+	width: 100%;
+}
+
+.hero__img>svg {
+	vertical-align: middle;
+}
+
+.logo,
 .man {
+	max-width: 300px;
+}
+
+.man>img {
 	border-radius: 30% 0;
-	overflow: hidden;
 }
 
 .nature{
-	overflow: hidden;
-	border-radius: 30px;
-	margin-bottom: 20px;
 	min-width: 100%;
+	margin-right: 0;
+}
+
+.nature>img{
+	border-radius: 30px;
 }
 
 .page__section {
