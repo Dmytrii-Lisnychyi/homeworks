@@ -1,0 +1,26 @@
+@import url("reset.css");
+
+
+body {
+	font-family: "Poppins", sans-serif;
+	font-size: 14px;
+	color: #000000;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+}
+
+[class*="__container"] {
+	max-width: 1350px;
+	/*1200 + 15 + 15*/
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+
+/*====================================================================*/
+
+
+

@@ -1,0 +1,188 @@
+@import url("reset.css");
+
+
+@import url("fonts.css");
+
+
+body {
+	font-family: "Poppins", sans-serif;
+	font-size: 14px;
+	color: #000000;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+}
+
+[class*="__container"] {
+	max-width: 1350px;
+	/*1200 + 15 + 15*/
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+
+/*====================================================================*/
+
+.shop {
+	background-color: #00B207;
+}
+
+.shop__body {
+	padding: 20px 0;
+	font-size: 0;
+}
+
+.card {
+	border: 1px solid #E6E6E6;
+	display: inline-block;
+	vertical-align: top;
+	width: 20%;
+}
+
+.card:hover{
+	border: 1px solid #2C742F;
+	box-shadow: 0px 0px 12px 0px rgba(32, 181, 38, 0.32);
+	transition: 0.3s;
+}
+
+.card:hover .card__text {
+	color: #2C742F;
+}
+
+.card:hover .card__wishlist{
+	visibility: visible;
+	opacity: 1;
+	transition: 2s;
+}
+
+.card__top {
+	position: relative;
+	padding: 5px;
+}
+
+.card__img {
+	display: block;
+	height: 230px;
+}
+
+.card__img img {
+	width: 100%;
+	height: 100%;
+}
+
+.card__bottom {
+	position: relative;
+	padding: 12px;
+	font-size: 0;
+}
+.card__wishlist {
+	position: absolute;
+	top: 16px;
+	right: 16px;
+	font-size: 0;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.card__wishlist>*:not(:last-child){
+	margin-bottom: 6px;
+}
+
+.card__icon,
+.wishlist__icon{
+	transition: 0.3s;
+}
+
+.wishlist__icon {
+	display: block;
+	padding: 10px;
+	border: 1px solid #F2F2F2;
+	border-radius: 50%;
+	background-color: #fff;
+	stroke: #1A1A1A;
+}
+
+.wishlist__icon:hover {
+	stroke: #fff;
+	background-color: #00B207;
+}
+
+
+.card__info {
+	display: inline-block;
+	vertical-align: top;
+}
+.card__text {
+	color: #4D4D4D;
+	font-size: 14px;
+	line-height: 1.5;
+}
+
+.card__price {
+	color: #1A1A1A;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.5;
+}
+
+.card__icon {
+	display: inline-block;
+	position: absolute;
+	right: 16px;
+	top: 50%;
+	/*=============ВИБАЧТЕ, НЕ ВТРИМАВСЯ================*/
+	transform: translateY(-50%);
+	stroke: #000000;
+	padding: 10px;
+	border-radius: 50%;
+	background-color: #F2F2F2;
+}
+
+
+.card__icon:hover {
+	stroke: #fff;
+	background-color: #00B207;
+}
+
+
+/*=====================================================================*/
+
+
+.page__section {
+}
+.section {
+	background-color: #5A54F2;
+}
+
+.content-top {
+	font-size: 0;
+}
+.content-top--left {
+}
+.content-top__image {
+}
+.content-top__info{
+
+}
+.content-bottom__info,
+.content-top__info {
+	display: inline-block;
+}
+.content-top__text {
+}
+.content-top__btn {
+}
+.content-bottom {
+}
+.content-bottom--right {
+}
+.content-bottom__info {
+}
+.content-bottom__text {
+}
+.content-bottom__btn {
+}
+.content-bottom__image {
+}
