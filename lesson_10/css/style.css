@@ -256,12 +256,12 @@ body {
 	padding: 22px 26px;
 	border-radius: 60px;
 	font-weight: 500;
-	background-color: #ef612c;
+	background-color: #F35B09;
 	transition: 0.3s;
 }
 
 .btn:hover {
-	background-color: rgb(150, 40, 0);
+	background-color: #c24a0a;
 }
 
 .content-bottom__image {
