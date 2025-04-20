@@ -26,7 +26,7 @@ body {
 /*====================================================================*/
 
 .shop {
-	background-color: #00B207;
+	background-color: #fafae4;
 }
 
 .shop__body {
@@ -39,6 +39,7 @@ body {
 	display: inline-block;
 	vertical-align: top;
 	width: 20%;
+	background-color: #fff;
 }
 
 .card:hover{
@@ -49,6 +50,11 @@ body {
 
 .card:hover .card__text {
 	color: #2C742F;
+}
+
+.card:hover .card__icon {
+	background-color: #00B207;
+	stroke: #fff;
 }
 
 .card:hover .card__wishlist{
@@ -141,9 +147,9 @@ body {
 }
 
 
-.card__icon:hover {
+.card:hover .card__icon:hover {
 	stroke: #fff;
-	background-color: #00B207;
+	background-color: #2C742F;
 }
 
 
@@ -154,35 +160,93 @@ body {
 }
 .section {
 	background-color: #5A54F2;
+	font-size: 0;
+}
+
+
+
+
+.content-bottom,
+.content-top {
+	display: inline-block;
 }
 
 .content-top {
-	font-size: 0;
+	margin-bottom: 55px;
 }
-.content-top--left {
+
+
+.content-top__image,
+.content-bottom__image {
+	display: inline-block;
+	border-radius: 20px;
+	overflow: hidden;
 }
-.content-top__image {
+
+.content-top__image{
+	margin-right: 70px;
+	vertical-align: middle;
 }
 .content-top__info{
-
+	vertical-align: middle;
 }
+
 .content-bottom__info,
 .content-top__info {
 	display: inline-block;
+	max-width: 600px;
+	color: #fff;
+	font-size: 18px;
 }
-.content-top__text {
+
+.text-content h2{
+	font-family: "Circular Std", sans-serif;
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 1.5;
+	margin-bottom: 16px;
 }
-.content-top__btn {
+
+.text-content p{
+	font-family: "Roboto", sans-serif;
+	line-height: 1.7;
 }
-.content-bottom {
+
+.text-content p:not(:last-child){
+	margin-bottom: 10px;
 }
+
 .content-bottom--right {
+	display: block;
+	margin-left: auto;
+	max-width: 1100px;
 }
 .content-bottom__info {
+	vertical-align: top;
+	margin-right: 70px;
 }
+
+.content-top__text,
 .content-bottom__text {
+	margin-bottom: 40px;
 }
-.content-bottom__btn {
+
+.btn{
+	cursor: pointer;
+	padding: 22px 26px;
+	border-radius: 60px;
+	background-color: orangered;
+	transition: 0.3s;
 }
+
+.btn:hover{
+	background-color: rgb(150, 40, 0);
+}
+
 .content-bottom__image {
+	box-shadow: 22px 42px 44px 0px rgba(0, 0, 0, 0.30);
+}
+
+.content-top__image {
+	box-shadow: -25px 20px 44px 0px rgba(84, 48, 209, 0.40);
 }
