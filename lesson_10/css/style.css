@@ -142,7 +142,7 @@ body {
 }
 
 
-.card:hover .card__icon:hover {
+.card .card__icon:hover {
 	stroke: #fff;
 	background-color: #2C742F;
 }
