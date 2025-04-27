@@ -38,7 +38,7 @@ code{
 
 .page-1,
 .page-2 {
-	padding: 20px 0;
+	padding: 100px 0;
 }
 
 h1{
@@ -147,11 +147,13 @@ h2 {
 
 .item-page-2 {
 	border: #ff7300 1px solid;
-	padding: 50px 5px;
 }
+
+
 .page-2__hero {
 	margin-bottom: 50px;
 	perspective: 1000px;
+	padding: 50px 5px;
 }
 
 
@@ -162,6 +164,7 @@ h2 {
 	width: 150px;
 	margin: 0 auto;
 	transition: all 1s;
+	background-color: rgba(0, 255, 128, 0.822);
 }
 
 .cube div{
