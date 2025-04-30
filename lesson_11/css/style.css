@@ -150,7 +150,7 @@ h2 {
 }
 
 
-.page-2__hero {
+.item-page-2__hero {
 	margin-bottom: 50px;
 	perspective: 1000px;
 	padding: 50px 5px;
@@ -205,22 +205,22 @@ h2 {
 }
 
 
-.page-2__hero:hover .cube--1{
+.item-page-2__hero:hover .cube--1{
 	transform: translate3d(-140px, -40px, 140px);
 }
-.page-2__hero:hover .cube--2{
+.item-page-2__hero:hover .cube--2{
 	transform: rotate3d(5, 4, 3, 180deg);
 }
-.page-2__hero:hover .cube--3{
+.item-page-2__hero:hover .cube--3{
 	transform: scale3d(2, 2 ,5);
 }
-.page-2__hero:hover .cube--4{
+.item-page-2__hero:hover .cube--4{
 	transform: rotateY(315deg);
 }
-.page-2__hero:hover .cube--5{
+.item-page-2__hero:hover .cube--5{
 	transform: rotateX(315deg);
 }
-.page-2__hero:hover .cube--6{
+.item-page-2__hero:hover .cube--6{
 	transform: scale(1.2) translate3d(-300px, -200px, 400px) rotate3d(-15, 17, 3, 360deg)
 }
 
