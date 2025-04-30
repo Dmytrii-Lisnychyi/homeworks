@@ -415,20 +415,20 @@ h2 {
 
 
 @keyframes spin{
-	form {transform: rotate(0deg);}
+	from {transform: rotate(0deg);}
 	to{transform: rotate(-360deg);}
 }
 
 .base__wheels-backgraund::after{
 	content: '';
 	position: absolute;
-	bottom: 20px;
-	right: 138px;
-	width: 85px;
+	bottom: 19px;
+	right: 143px;
+	width: 75px;
 	height: 35px;
 	background-color: black;
 	border-radius: 20px 40px 10px 5px;
-	transform: rotateZ(-14deg);
+	transform: rotateZ(-16deg);
 }
 
 .base__wheels-backgraund::before{
@@ -436,9 +436,9 @@ h2 {
 	position: absolute;
 	background-color: black;
 	bottom: 9px;
-	left: 88.5px;
-	width: 80px;
-	height: 49px;
+	left: 90px;
+	width: 75px;
+	height: 45px;
 	border-radius: 80px 80px 0 0;
 }
 .door {
