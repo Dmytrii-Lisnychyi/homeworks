@@ -401,10 +401,11 @@ h2 {
 	width: 75px;
 	border-radius: 50%;
 	background: url('../img/wheel-2.png') center / 115% no-repeat;
+	animation: spin 0.001s  linear  infinite;
 }
 
-.base__wheels:hover .base__wheel{
-	animation: spin 0.001s  linear  infinite;
+.base:hover .base__wheel{
+	animation-play-state: paused;
 }
 
 
