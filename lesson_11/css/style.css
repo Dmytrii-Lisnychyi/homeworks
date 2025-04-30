@@ -248,16 +248,10 @@ h2 {
 	bottom: 25%;
 	
 }
-.car > * {
-	position: absolute;
-	bottom: 0;
-}
-
 
 .car__base{
 	width: 600px;
 	height: 200px;
-	border: #ec5e00 1px dashed;
 	perspective: 600px;
 	transform-style: preserve-3d; 
 }
@@ -407,6 +401,9 @@ h2 {
 	width: 75px;
 	border-radius: 50%;
 	background: url('../img/wheel-2.png') center / 115% no-repeat;
+}
+
+.base__wheels:hover .base__wheel{
 	animation: spin 0.001s  linear  infinite;
 }
 
@@ -459,7 +456,7 @@ h2 {
 .base:hover .door{
 	transform-origin: 0px 40px;
 	transform: rotate(-45deg);
-	transition: all 2s;
+	transition: all 3s;
 }
 .door__top {
 	overflow: hidden;
@@ -622,3 +619,14 @@ h2 {
 	z-index: 2;
 }
 
+
+.base__small-window {
+	position: absolute;
+	right: 77px;
+	top: 5px;
+	height: 27px;
+	width: 50px;
+	border: #000000 2px solid;
+	transform: skew(70deg) rotatey(40deg) ;
+	background-color: #1a2726bb;
+}
