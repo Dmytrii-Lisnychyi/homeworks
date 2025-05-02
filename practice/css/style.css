@@ -121,7 +121,7 @@ body {
 
 
 
-.section-1__items {
+[class*="items"] {
 	position: relative;
 	width: 100%;
 	height: 100%;
@@ -129,7 +129,7 @@ body {
 	transform-style: preserve-3d;
 }
 
-.section-1__item {
+[class*="item-"] {
 	position: absolute;
 	top: 0;
 	width: 100%;
@@ -137,23 +137,23 @@ body {
 }
 
 
-.ball__section:nth-child(even) .section-1__item:nth-child(odd){
+.ball__section:nth-child(even) [class*="item-"]:nth-child(odd){
 	background-color: #002eac;
 }
 
-.ball__section:nth-child(odd) .section-1__item:nth-child(even){
+.ball__section:nth-child(odd) [class*="item-"]:nth-child(even){
 	background-color: #1900ff;
 }
 
-.section-1__item:nth-child(even){
+[class*="item-"]:nth-child(even){
 	background-color: #00b3d3;
 }
 
 
-.section-1__item:nth-child(odd){
+[class*="item-"]:nth-child(odd){
 	background-color: #002b3b;
 }
-.section-1__item:last-child{
+[class*="item-"]:last-child{
 	background-color: #302d2c;
 	border: #000000 1px solid;
 }
