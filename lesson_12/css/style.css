@@ -1,0 +1,77 @@
+@import url("reset.css");
+
+@import url("../components/balloon_1.css");
+@import url("../components/balloon_2.css");
+@import url("../components/balloon_3.css");
+
+body {
+	background: url('../img/desert.webp') center / cover no-repeat;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+}
+
+[class*="__container"] {
+	padding: 0 15px;
+}
+
+
+/*====================================================================*/
+
+.page {
+	height: 100vh;
+}
+
+.page__body {
+	width: 100%;
+	height: 100vh;
+	perspective: 2000px;
+}
+
+.page__balloon {
+	position: absolute;
+	transition: 10s;
+}
+
+
+.balloon-1 .ball{
+	animation: balloon-1 600s linear alternate infinite 10s;
+}
+
+.balloon-2 .ball{
+	animation: balloon-2 700s linear alternate infinite 3s;
+}
+
+.balloon-3 .ball{
+	animation: balloon-3 500s linear alternate infinite 16s;
+}
+
+@keyframes balloon-1 {
+	2% {
+		transform: translateY(-200px)  translateZ(-1000px) rotateY(30deg);
+	}
+	100% {
+		transform: translateX(-120000px) translateZ(-270000px) rotateY(8000deg);
+	}
+}
+
+@keyframes balloon-2 {
+	2% {
+		transform:  translateX(500px) translateY(-400px) rotateY(90deg);
+	}
+	100% {
+		transform: translateZ(-200000px) translateX(-200px) rotateY(8000deg);
+	}
+}
+
+
+@keyframes balloon-3 {
+	1% {
+		transform: translateY(-400px) translateX(2300px) translateZ(-3500px);
+	}
+	100% {
+		transform: translateZ(-200000px) translateX(17000px) rotateY(8000deg);
+	}
+}
