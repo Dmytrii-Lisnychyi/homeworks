@@ -189,7 +189,8 @@ h1{
 .slider__links{
 	display: flex;
 	justify-content: center;
-	gap: 20px;
+	gap: 0 20px;
+	font-size: 0;
 }
 
 .slider__links a {
