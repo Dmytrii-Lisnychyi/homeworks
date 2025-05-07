@@ -256,12 +256,19 @@ h1{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: center;
 	gap: 3px;
 }
-.column-stats__total {
+.column-stats__total{
+	position: relative;
+	display: flex;
+	align-items: center;
 	font-size: 24px;
 }
 
 .column-stats__total::after{
 	content: "+";
+	position: absolute;
+	left: 101%;
+	top: -7%;
 }
