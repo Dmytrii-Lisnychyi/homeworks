@@ -261,14 +261,14 @@ h1{
 }
 .column-stats__total{
 	position: relative;
-	display: flex;
-	align-items: center;
 	font-size: 24px;
+	transform: translateX(-10%);
 }
 
 .column-stats__total::after{
 	content: "+";
 	position: absolute;
-	left: 101%;
 	top: -7%;
+	left: 101%;
+	font-weight: 700;
 }
