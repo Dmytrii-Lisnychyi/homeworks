@@ -52,11 +52,15 @@ footer {
 }
 
 h1{
-	flex: 0 1 400px;
+	display: flex;
+	flex-wrap: wrap;
 	font-size: 38px;
 	color: #fff;
 
 	margin-bottom: 30px;
+}
+h1>strong{
+	flex: 1 1 100%;
 }
 .hero__cards {
 	display: flex;
@@ -148,8 +152,13 @@ h1{
 }
 
 .info>h2{
+	display: flex;
+	flex-wrap: wrap;
 	font-size: 34px;
 	color: #412672;
+}
+.info>h2>strong{
+	flex: 1 1 100%;
 }
 
 .info>p{
