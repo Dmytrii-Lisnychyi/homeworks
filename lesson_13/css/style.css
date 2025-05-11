@@ -53,19 +53,17 @@ footer {
 
 h1{
 	display: flex;
-	flex-wrap: wrap;
+	flex-direction: column;
 	font-size: 38px;
 	color: #fff;
 
 	margin-bottom: 30px;
 }
-h1>strong{
-	flex: 1 1 100%;
-}
+
 .hero__cards {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 19.5px;
+	gap: 19px;
 }
 
 .card-hero {
@@ -109,6 +107,7 @@ h1>strong{
 
 
 .card-hero__link {
+	align-self: start;
 	color: #FE3F3F;
 	line-height: 126.7%;
 
@@ -218,22 +217,23 @@ h1>strong{
 
 
 .slider__img {
-	max-width: 764px;
+	display: flex;
 }
 
 .slider__img>img{
-	width: 100%;
+	flex: 0 1 764px;
 }
 
 
 /*================================================================*/
 
 .section-2{
+	
 	background-color: #412672;
 }
 
 .section-2__body {
-	padding: 70px;
+	padding: 70px 0;
 }
 
 .section-2__body h2{
