@@ -195,6 +195,14 @@ footer {
 	min-height: 100px;
 }
 
+[class*="__input"]::placeholder{
+	transition: 0.4s;
+}
+
+[class*="__input"]:focus::placeholder{
+	opacity: 0;
+}
+
 
 
 .order {
