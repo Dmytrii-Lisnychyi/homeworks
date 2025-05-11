@@ -228,24 +228,26 @@ footer {
 	align-items: center;
 	gap: 0 6px;
 }
-.product__img {
+.item-product__img {
 	flex: 0 0 60px;
 	height: 60px;
 	width: 60px;
 	background-color: orangered;
 }
-.product__name {
+.item-product__name {
 	line-height: 1.5;
 }
-.product__number::before {
+.item-product__number::before {
 	content: 'x';
 }
 
 [class*="__price"]:not(.total-product__shipping>.total-product__price)::before{
 	content: '$';
 }
-.item-product__price {
+
+[class*="__price"] {
 	font-weight: 500;
+	line-height: 1.5;
 }
 
 .total-product {
