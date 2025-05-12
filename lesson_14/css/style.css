@@ -107,6 +107,7 @@ footer {
 
 .label-checkout__title {
 	align-self: flex-start;
+	cursor: pointer;
 }
 
 .label-checkout__title>span::before{
@@ -132,6 +133,9 @@ footer {
 
 .label-checkout option[value=""]{
 	display: none;
+}
+.label-checkout:focus option[value]{
+	opacity: 0;
 }
 
 .label-checkout option{
