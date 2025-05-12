@@ -49,6 +49,7 @@ footer {
 	justify-content: space-between;
 	flex-wrap: wrap;
 	gap: 25px;
+	user-select: none;
 }
 
 .checkout__info {
@@ -137,6 +138,12 @@ footer {
 	color: #1A1A1A;
 }
 
+.label-checkout:hover .label-checkout__input,
+.label-checkout:hover .label-checkout__select,
+.label-checkout:hover .label-checkout__textarea{
+	outline: 2px solid #00B207;
+}
+
 .label-checkout__select,
 .label-checkout__input,
 .label-checkout__textarea{
@@ -169,6 +176,7 @@ footer {
 	gap: 0 5px;
    line-height: 1.5;
 	color: #4D4D4D;
+	cursor: pointer;
 }
 
 .checkbox__text::before {
@@ -178,7 +186,11 @@ footer {
 	border: 1px solid #CCCCCC;
 	border-radius: 3px;
 
-	flex: 1 0 auto;
+	flex: 0 0 auto;
+}
+
+.checkbox__text:hover::before{
+	border: 2px solid #00B207;
 }
 
 .checkbox__input:focus-visible+.checkbox__text::before{
@@ -186,8 +198,6 @@ footer {
 }
 
 .checkbox__input:checked+.checkbox__text::before {
-	width: 20px;
-	height: 20px;
 	background:#00B207 url('../img/check.svg') center / 16px no-repeat;
 }
 
