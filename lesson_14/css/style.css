@@ -247,6 +247,7 @@ footer {
 	justify-content: space-between;
 	align-items: center;
 	gap: 0 10px;
+	transition: 0.3s;
 }
 .item-product__info {
 	display: flex;
@@ -256,7 +257,6 @@ footer {
 
 .item-product:hover{
 	transform: scale(1.03);
-	border-bottom: 1px solid #E6E6E6;
 }
 
 .item-product__img {
