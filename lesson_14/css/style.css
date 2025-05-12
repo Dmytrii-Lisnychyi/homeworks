@@ -253,6 +253,12 @@ footer {
 	align-items: center;
 	gap: 0 6px;
 }
+
+.item-product:hover{
+	transform: scale(1.03);
+	border-bottom: 1px solid #E6E6E6;
+}
+
 .item-product__img {
 	flex: 0 0 60px;
 	height: 60px;
