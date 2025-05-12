@@ -205,11 +205,13 @@ footer {
 	min-height: 100px;
 }
 
-[class*="__input"]::placeholder{
+[class*="input"]::placeholder,
+[class*="textarea"]::placeholder{
 	transition: 0.4s;
 }
 
-[class*="__input"]:focus::placeholder{
+[class*="input"]:focus::placeholder,
+[class*="textarea"]:focus::placeholder{
 	opacity: 0;
 }
 
