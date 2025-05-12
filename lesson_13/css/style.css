@@ -173,7 +173,7 @@ h1{
 }
 
 .info__list>li{
-	display: inline-flex;
+	display: flex;
 	align-items: center;
 	gap: 15px;
 }
