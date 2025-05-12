@@ -188,9 +188,7 @@ footer {
 .checkbox__input:checked+.checkbox__text::before {
 	width: 20px;
 	height: 20px;
-	border: 2px solid rgb(255, 255, 255);
-   background: #00B207;
-	outline: 2px solid #00B207;
+	background:#00B207 url('../img/check.svg') center / 16px no-repeat;
 }
 
 .label-checkout__textarea{
