@@ -1,31 +1,3 @@
-@import url("reset.css");
-
-
-body {
-	background-color: #000000;
-}
-
-.wrapper {
-	min-height: 100%;
-	overflow: clip;
-}
-
-[class*="__container"] {
-	max-width: 1350px;
-	/*1200 + 15 + 15*/
-	margin: 0 auto;
-	padding: 0 15px;
-}
-
-
-/*====================================================================*/
-
-
-.page {
-	height: 100vh;
-	padding: 20px 0;
-}
-
 .rating-star {
 	position: relative;
 	font-size: 16px;
