@@ -73,13 +73,10 @@ body {
 }
 
 .rating-star__label:hover,
-.rating-star__label:hover ~ .rating-star__label,
-.rating-star__label:checked ~ .rating-star__label:hover
-{
+.rating-star__label:hover ~ .rating-star__label {
 	color: #fff78a;
 }
-
-.rating-star__item:checked,
-.rating-star__item:checked ~ .rating-star__label {
+.rating-star__label:has(input:checked),
+.rating-star__label:has(input:checked) ~ .rating-star__label {
 	color: #fcb723;
 }

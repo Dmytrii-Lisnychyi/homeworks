@@ -1,4 +1,4 @@
-.btn{
+.btn {
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
@@ -12,15 +12,19 @@
 }
 
 .btn,
-.btn svg{
+.btn svg {
 	stroke: #1f1f1f;
 	transition: 0.7s;
 }
 
-.btn:hover{
-	background-color: #00B207;
-}
 
-.btn:hover svg{
-	stroke: #fff;
+
+@media (any-hover: hover) {
+	.btn:hover {
+		background-color: #00B207;
+	}
+
+	.btn:hover svg {
+		stroke: #fff;
+	}
 }
