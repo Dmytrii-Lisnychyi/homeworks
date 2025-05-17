@@ -304,20 +304,13 @@ footer {
 	margin-bottom: 6px;
 }
 
-.card-news__info span {
-	display: inline-flex;
-	gap: 8px;
-}
-
-.card-news__user span::before {
-	content: "By";
+.card-news__info p {
 	color: #808080;
 }
 
-
-.card-news__comments span::after {
-	content: "Comments";
-	color: #808080;
+.card-news__info>* span
+{
+	color: #4D4D4D;
 }
 
 .card-news__info>li {
@@ -385,6 +378,9 @@ footer {
 
 	.card-news {
 		flex: 0 1 calc(100% / 2 - ((24px * (2 - 1)) / 2));
+	}
+	.card-news__bottom>p {
+		font-size: 16px;
 	}
 }
 
