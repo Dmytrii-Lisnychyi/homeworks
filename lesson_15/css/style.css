@@ -426,6 +426,9 @@ footer {
 	.card-products {
 		flex: 0 1 calc(100% / 1);
 	}
+	.products__list{
+		gap: 7px;
+	}
 
 	.products__title {
 		font-size: 20px;
