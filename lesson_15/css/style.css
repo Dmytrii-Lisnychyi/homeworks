@@ -42,7 +42,6 @@ footer {
 	padding: 20px;
 }
 
-.page__products {}
 
 .products {
 	padding: 60px 0;
@@ -308,8 +307,7 @@ footer {
 	color: #808080;
 }
 
-.card-news__info>* span
-{
+.card-news__info>* span {
 	color: #4D4D4D;
 }
 
@@ -368,6 +366,22 @@ footer {
 }
 
 @media (max-width: 970px) {
+	.products {
+		padding: 30px 0;
+	}
+
+	.news {
+		padding: 15px 0;
+	}
+
+	.news__title {
+		margin-bottom: 20px;
+	}
+
+	.products__header {
+		margin-bottom: 10px;
+	}
+
 	.card-products {
 		flex: 0 1 calc(100% / 3);
 	}
@@ -379,6 +393,7 @@ footer {
 	.card-news {
 		flex: 0 1 calc(100% / 2 - ((24px * (2 - 1)) / 2));
 	}
+
 	.card-news__bottom>p {
 		font-size: 16px;
 	}
@@ -417,5 +432,9 @@ footer {
 
 	.card-news__link {
 		font-size: 14px;
+	}
+
+	.news__title {
+		font-size: 25px;
 	}
 }
