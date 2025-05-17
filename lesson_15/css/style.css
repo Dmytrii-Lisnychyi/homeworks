@@ -97,16 +97,15 @@ footer {
 }
 
 .card-products__img{
+	display: block;
 	overflow: hidden;
-	height: 100%;
-	width: 100%;
 	aspect-ratio: 254 / 230;
 }
 
 .card-products__img img {
 	height: 100%;
+	width: 100%;
 	object-fit: cover;
-	
 	transition: 0.3s;
 }
 
@@ -263,6 +262,7 @@ footer {
 }
 
 .card-news__top {
+	display: block;
 	position: relative;
 	overflow: hidden;
 	aspect-ratio: 424 / 324;
