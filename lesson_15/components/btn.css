@@ -17,8 +17,6 @@
 	transition: 0.7s;
 }
 
-
-
 @media (any-hover: hover) {
 	.btn:hover {
 		background-color: #00B207;
@@ -27,4 +25,14 @@
 	.btn:hover svg {
 		stroke: #fff;
 	}
+}
+
+.btn:active svg{
+	stroke: #fff;
+}
+.btn:active svg>path{
+	fill: #00B207;
+}
+.btn:active{
+	background-color: #fff;
 }

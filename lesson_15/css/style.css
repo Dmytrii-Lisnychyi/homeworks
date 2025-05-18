@@ -231,6 +231,12 @@ footer {
 	}
 }
 
+.card-products__bag:active svg {
+	stroke: #00B207;
+}
+.card-products__bag:active svg>path {
+	fill: transparent;
+}
 
 /*===========================================================================*/
 
@@ -376,6 +382,16 @@ footer {
 	.card-news__info span {
 		gap: 2px;
 	}
+}
+
+@media (max-width: 767.98px){
+	.card-products__bag {
+		background-color: #00B207;
+	}
+	.card-products__bag svg{
+		stroke: #fff;
+	}
+
 }
 
 @media (max-width: 970px) {
