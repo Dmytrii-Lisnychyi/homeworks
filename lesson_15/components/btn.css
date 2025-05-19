@@ -34,5 +34,6 @@
 	fill: #00B207;
 }
 .btn:active{
-	background-color: #fff;
+	background-color: transparent;
+	border: none;
 }
