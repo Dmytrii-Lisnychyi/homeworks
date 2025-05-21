@@ -67,13 +67,23 @@ body {
 }
 
 .menu__item {
+	position: relative;
 	font-weight: 500;
 	line-height: 1.5;
 	text-transform: uppercase;
 }
 
-.menu__link{
-	width: 100%;
+
+
+.menu__item::after{
+	position: absolute;
+	content: "";
+	width: 0%;
+	height: 2px;
+	bottom: -2px;
+	left: 0;
+	background-color: brown;
+	transition: 0.7s;
 }
 
 .header__action {
@@ -94,6 +104,7 @@ body {
 	padding: 8px 30px;
 	background-color: #F26522;
 	border-radius: 20px;
+	transition: 0.3s;
 }
 
 .header__btn::after {
@@ -182,6 +193,8 @@ body {
 		color: #000000;
 	}
 
+
+
 	.menu__link{
 		text-align: end;
 	}
@@ -200,5 +213,15 @@ body {
 	.menu-open .icon-menu::after {
 		bottom: 50%;
 		transform: rotate(45deg) translateY(2px);
+	}
+}
+
+@media (any-hover: hover){
+	.menu__item:hover::after{
+		width: 100%;
+	}
+
+	.header__btn:hover{
+		background-color: #d2581f;
 	}
 }
