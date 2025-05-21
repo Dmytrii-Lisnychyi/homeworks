@@ -1,0 +1,39 @@
+.btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	flex: 0 0 auto;
+	width: 40px;
+	height: 40px;
+
+	border-radius: 50%;
+	border: 1px solid #F2F2F2;
+
+}
+
+.btn,
+.btn svg {
+	stroke: #1f1f1f;
+	transition: 0.7s;
+}
+
+@media (any-hover: hover) {
+	.btn:hover {
+		background-color: #00B207;
+	}
+
+	.btn:hover svg {
+		stroke: #fff;
+	}
+}
+
+.btn:active svg{
+	stroke: #fff;
+}
+.btn:active svg>path{
+	fill: #00B207;
+}
+.btn:active{
+	background-color: transparent;
+	border: none;
+}
