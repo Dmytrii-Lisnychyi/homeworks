@@ -282,8 +282,6 @@ footer {
 	text-transform: uppercase;
 }
 
-
-
 .card-news__bottom {
 	padding: 24px;
 	display: flex;
@@ -316,7 +314,6 @@ footer {
 .card-news__info>li p{
 	flex-shrink: 0;
 }
-
 
 .card-news__bottom>h3 {
 	flex-grow: 1;
@@ -375,7 +372,6 @@ footer {
 	.card-products__bag svg {
 		stroke: #fff;
 	}
-
 }
 
 @media (max-width: 970px) {
@@ -509,5 +505,3 @@ footer {
 		background-color: #fff;
 	}
 }
-
-
