@@ -109,6 +109,7 @@ footer {
 	width: 100%;
 	object-fit: cover;
 	transition: 0.3s;
+	will-change: transform;
 }
 
 .card-products__action {
@@ -120,6 +121,7 @@ footer {
 	justify-content: space-between;
 	gap: 5px;
 	padding: 16px 16px 0 16px;
+	pointer-events: none;
 }
 
 .card-products__buttons {
@@ -150,6 +152,7 @@ footer {
 	border-radius: 4px;
 	font-weight: 500;
 	color: #fff;
+	pointer-events: all;
 }
 
 .card-products__sale:hover,
@@ -161,6 +164,7 @@ footer {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	column-gap: 30px;
 	padding: 12px;
 	height: 100%;
 }
@@ -194,59 +198,6 @@ footer {
 	align-self: flex-start;
 }
 
-@media (any-hover: hover) {
-
-	.card-products__top:hover img,
-	.card-news__top:hover img {
-		transform: scale(1.05);
-	}
-
-	.card-products:hover {
-		border: 1px solid #2C742F;
-		box-shadow: 0px 0px 12px 0px rgba(32, 181, 38, 0.32);
-		z-index: 2;
-	}
-
-	.card-products:hover .info-product__title {
-		color: #2C742F;
-	}
-
-	.card-products:hover .card-products__bag {
-		background-color: #00B207;
-	}
-
-	.card-products:hover .card-products__bag svg {
-		stroke: #fff;
-	}
-
-	.card-products .card-products__bag:hover {
-		background-color: #2C742F;
-	}
-
-	.card-products__buttons {
-		visibility: hidden;
-		opacity: 0;
-		transition: 0.5s;
-	}
-
-	.card-products:hover .card-products__buttons {
-		visibility: visible;
-		opacity: 1;
-	}
-
-	.card-news:hover{
-		box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.08);
-		border: 1px solid transparent;
-	}
-}
-
-.card-products__bag:active svg {
-	stroke: #00B207;
-}
-
-.card-products__bag:active svg>path {
-	fill: transparent;
-}
 
 /*===========================================================================*/
 
@@ -270,6 +221,7 @@ footer {
 }
 
 .card-news {
+	overflow: hidden;
 	display: flex;
 	flex-direction: column;
 	flex: 0 1 calc(100% / 3 - ((24px * (3 - 1)) / 3));
@@ -283,6 +235,7 @@ footer {
 	position: relative;
 	overflow: hidden;
 	aspect-ratio: 424 / 324;
+	background-color: rgba(0, 0, 0, 0.6);
 }
 
 .card-news__top img {
@@ -291,6 +244,7 @@ footer {
 	width: 100%;
 	border-radius: 8px 8px 0 0;
 	transition: 0.3s;
+	will-change: transform;
 }
 
 .card-news__date {
@@ -347,12 +301,13 @@ footer {
 }
 
 
-.card-news__bottom>p {
+.card-news__bottom>h3 {
 	flex-grow: 1;
 	font-size: 18px;
 	font-weight: 500;
 	line-height: 1.5;
 	margin-bottom: 20px;
+	transition: color 0.3s;
 }
 
 .card-news__link {
@@ -482,4 +437,66 @@ footer {
 	.news__title {
 		font-size: 25px;
 	}
+}
+
+@media (any-hover: hover) {
+
+	.card-products__top:hover img,
+	.card-news__top:hover img {
+		transform: scale(1.05);
+	}
+
+	.card-products:hover {
+		border: 1px solid #2C742F;
+		box-shadow: 0px 0px 12px 0px rgba(32, 181, 38, 0.32);
+		z-index: 2;
+	}
+
+	.card-products:hover .info-product__title {
+		color: #2C742F;
+	}
+
+	.card-products:hover .card-products__bag {
+		background-color: #00B207;
+	}
+
+	.card-products:hover .card-products__bag svg {
+		stroke: #fff;
+	}
+
+	.card-products .card-products__bag:hover {
+		background-color: #2C742F;
+	}
+
+	.card-products__buttons {
+		visibility: hidden;
+		opacity: 0;
+		transition: 0.5s;
+	}
+
+	.card-products:hover .card-products__buttons {
+		visibility: visible;
+		opacity: 1;
+	}
+
+	.card-news:hover{
+		box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.08);
+		border: 1px solid transparent;
+	}
+
+	.card-news:hover .card-news__bottom>h3{
+		color: #2C742F;
+	}
+}
+
+.card-products__bag{
+	border-color: #F2F2F2;
+}
+
+.card-products__bag:active svg {
+	stroke: #00B207;
+}
+
+.card-products__bag:active svg>path {
+	fill: transparent;
 }
