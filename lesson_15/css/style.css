@@ -101,13 +101,15 @@ footer {
 .card-products__img {
 	display: block;
 	overflow: hidden;
-	aspect-ratio: 254 / 230;
+	aspect-ratio: 258 / 230;
+	background-color: rgba(0, 0, 0, 0.6);
 }
 
 .card-products__img img {
 	height: 100%;
 	width: 100%;
 	object-fit: cover;
+	transform: scale(1.02);
 	transition: 0.3s;
 	will-change: transform;
 }
@@ -255,6 +257,7 @@ footer {
 	height: 100%;
 	width: 100%;
 	border-radius: 8px 8px 0 0;
+	transform: scale(1.02);
 	transition: 0.3s;
 	will-change: transform;
 }

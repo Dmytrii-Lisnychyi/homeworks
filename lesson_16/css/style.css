@@ -28,9 +28,13 @@ body {
 
 
 /*=========================================================================*/
-
+main{
+	padding: 100px 0 0 0;
+}
 .header {
 	background: #fbe6b8;
+	position: fixed;
+	width: 100%;
 }
 
 .header__container {
@@ -56,6 +60,7 @@ body {
 	line-height: 1.5;
 	text-transform: uppercase;
 }
+
 .icon-menu {
 	display: none;
 }
@@ -73,14 +78,14 @@ body {
 	text-transform: uppercase;
 }
 
-.menu__link{
+.menu__link {
 	text-align: right;
 	display: block;
 }
 
 
 
-.menu__item::after{
+.menu__item::after {
 	position: absolute;
 	content: "";
 	width: 0%;
@@ -120,11 +125,11 @@ body {
 }
 
 @media (max-width: 991.98px) {
-	.logo__text{
+	.logo__text {
 		display: none;
 	}
 
-	.menu__list{
+	.menu__list {
 		column-gap: 20px;
 	}
 }
@@ -151,19 +156,24 @@ body {
 		transition: 0.3s;
 	}
 
-	.icon-menu::before{
+	.icon-menu::before {
 		top: 0;
 	}
 
-	.icon-menu::after{
+	.icon-menu::after {
 		bottom: 0;
 	}
-	.icon-menu span{
+
+	.icon-menu span {
 		top: 50%;
 		transform: translateY(-50%);
 	}
 
-	.menu{
+	body.menu-open {
+		overflow: hidden;
+	}
+
+	.menu {
 		overflow: auto;
 		position: fixed;
 		height: 100%;
@@ -172,11 +182,11 @@ body {
 		top: 0;
 		background-color: #fbe4a7;
 		z-index: 3;
-		padding: 150px 15px 0 15px;
+		padding: 150px 15px 30px 15px;
 		transition: 0.6s;
 	}
 
-	.menu::before{
+	.menu::before {
 		position: fixed;
 		content: "";
 		top: 0;
@@ -187,47 +197,49 @@ body {
 		z-index: 1;
 	}
 
-	.menu__list{
+	.menu__list {
 		flex-grow: 1;
 		align-items: stretch;
 		flex-direction: column;
 		gap: 20px;
 	}
 
-	.menu__item{
+	.menu__item {
 		font-size: 28px;
 		color: #000000;
 	}
 
 
 
-	.menu__link{
+	.menu__link {
 		text-align: end;
 	}
 
-	.menu-open .menu{
+	.menu-open .menu {
 		right: 0;
 	}
 
 	.menu-open .icon-menu span {
 		opacity: 0;
 	}
+
 	.menu-open .icon-menu::before {
 		top: 50%;
 		transform: rotate(-45deg) translateY(-2px);
 	}
+
 	.menu-open .icon-menu::after {
 		bottom: 50%;
 		transform: rotate(45deg) translateY(2px);
 	}
 }
 
-@media (any-hover: hover){
-	.menu__item:hover::after{
+@media (any-hover: hover) {
+	.menu__item:hover::after {
 		width: 100%;
 	}
 
-	.header__btn:hover{
+	.header__btn:hover {
 		background-color: #d2581f;
 	}
 }
