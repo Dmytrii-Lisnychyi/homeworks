@@ -4,36 +4,6 @@
 @import url("../components/rating.css");
 
 body {
-	font-family: "Montserrat", sans-serif;
-	font-size: 13px;
-	color: #000;
-}
-
-.wrapper {
-	min-height: 100%;
-	overflow: clip;
-
-	display: flex;
-	flex-direction: column;
-}
-
-.wrapper>main {
-	flex-grow: 1;
-}
-
-[class*="__container"] {
-	max-width: 1230px;
-	/*1200 + 15 + 15*/
-	margin: 0 auto;
-	padding: 0 15px;
-}
-
-
-
-/*=========================================================================*/
-
-
-body {
 	font-family: "Poppins", sans-serif;
 	font-size: 14px;
 	color: #1A1A1A;
@@ -131,13 +101,15 @@ footer {
 .card-products__img {
 	display: block;
 	overflow: hidden;
-	aspect-ratio: 254 / 230;
+	aspect-ratio: 258 / 230;
+	background-color: rgba(0, 0, 0, 0.6);
 }
 
 .card-products__img img {
 	height: 100%;
 	width: 100%;
 	object-fit: cover;
+	transform: scale(1.02);
 	transition: 0.3s;
 	will-change: transform;
 }
@@ -158,36 +130,8 @@ footer {
 	display: flex;
 	flex-direction: column;
 	gap: 6px;
-}
-
-.card-products__label {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 5px;
-	align-self: start;
-	line-height: 1.5;
-}
-
-.card-products__sale {
-	background-color: #EA4B48;
-}
-
-.card-products__best-sale {
-	background-color: #2388FF;
-}
-
-.card-products__sale,
-.card-products__best-sale {
-	padding: 3px 8px;
-	border-radius: 4px;
-	font-weight: 500;
-	color: #fff;
-	pointer-events: all;
-}
-
-.card-products__sale:hover,
-.card-products__best-sale:hover {
-	transform: scale(1.02);
+	justify-content: end;
+	margin-left: auto;
 }
 
 .card-products__bottom {

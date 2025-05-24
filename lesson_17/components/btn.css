@@ -8,7 +8,8 @@
 
 	border-radius: 50%;
 	border: 1px solid #F2F2F2;
-
+	pointer-events: all;
+	background-color: #fff;
 }
 
 .btn,
@@ -20,6 +21,7 @@
 @media (any-hover: hover) {
 	.btn:hover {
 		background-color: #00B207;
+		border-color: #fff;
 	}
 
 	.btn:hover svg {
@@ -27,6 +29,16 @@
 	}
 }
 
+.btn:active svg{
+	stroke: #fff;
+}
+.btn:active svg>path{
+	fill: #00B207;
+}
+.btn:active{
+	background-color: transparent;
+	border: none;
+}
 .btn:active svg{
 	stroke: #fff;
 }
