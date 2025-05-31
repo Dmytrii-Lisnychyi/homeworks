@@ -329,7 +329,7 @@ footer {
 }
 
 
-.products__bag {
+.btn--green {
 	border-color: #F2F2F2;
 }
 
@@ -621,15 +621,15 @@ footer {
 		border-color: #2C742F;
 	}
 
-	.grid-section-products__item:hover .products__bag {
+	.grid-section-products__item:hover .btn--green {
 		background-color: #00B207;
 	}
 
-	.grid-section-products__item:hover .products__bag svg {
+	.grid-section-products__item:hover .btn--green svg {
 		stroke: #fff;
 	}
 
-	.grid-section-products__item .products__bag:hover {
+	.grid-section-products__item .btn--green:hover {
 		background-color: #2C742F;
 	}
 
