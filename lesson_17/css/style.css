@@ -503,7 +503,7 @@ footer {
 
 
 	.grid-section-products__info>.rating {
-		align-self: top;
+		align-self: start;
 	}
 
 	.grid-section-products__name {
