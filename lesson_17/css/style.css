@@ -558,16 +558,6 @@ footer {
 	}
 }
 
-@media (max-width: 500px) {
-	.grid-section-products {
-		grid-template-columns: 1fr;
-	}
-
-	.grid-section-products__item {
-		justify-content: center;
-	}
-}
-
 @media (any-hover: hover) {
 
 	.banner-card__button:hover {
