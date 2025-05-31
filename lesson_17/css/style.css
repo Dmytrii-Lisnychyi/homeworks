@@ -126,6 +126,7 @@ footer {
 	line-height: 1.2;
 	background-color: #fff;
 	border-radius: 43px;
+	will-change: transform;
 }
 
 .banner-card__button::after {
