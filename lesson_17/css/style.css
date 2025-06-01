@@ -288,6 +288,7 @@ footer {
 	aspect-ratio: 1 / 1;
 	object-fit: cover;
 	width: 100%;
+	align-self: center;
 	background-color: lightgray;
 }
 
@@ -491,7 +492,7 @@ footer {
 		display: flex;
 		flex-direction: column;
 		justify-self: end;
-		gap: 0;
+		gap: 2px;
 		width: auto;
 		height: auto;
 		position: relative;
@@ -549,12 +550,22 @@ footer {
 	}
 
 	.grid-section-products__item {
-
 		gap: 0 40px;
 	}
 
 	.grid-section-products__info {
 		gap: 0 40px;
+	}
+}
+
+@media (max-width: 400px) {
+
+	.grid-section-products__item {
+		gap: 0 10px;
+	}
+
+	.grid-section-products__info {
+		gap: 0 10px;
 	}
 }
 
