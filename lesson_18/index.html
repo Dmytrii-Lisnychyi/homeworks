@@ -91,27 +91,28 @@
 						</div>
 					</section>
 					<section class="article__comment comment-article">
-						<form action="#" class="comment-article__form">
+						<h2 class="comment-article__title">Leave a Comment</h2>
+						<form action="#" method="post" class="comment-article__form">
 							<fieldset>
-								<legend>Leave a Comment</legend>
+								<legend>Personal data</legend>
 								<div class="comment-article__group">
 									<label class="comment-article__label" for="name">Full Name</label>
-									<input id="name" required type="text" name="form[]" placeholder="Zakir Hossen" class="comment-article__input">
+									<input id="name" required type="text" name="form[]" value="Zokir Hossen" placeholder="Your Name" class="comment-article__input">
 								</div>
 								<div class="comment-article__group">
 									<label class="comment-article__label" for="email">Email</label>
-									<input id="email" required type="text" name="form[]" placeholder="Your Email" class="comment-article__input">
+									<input id="email" required type="text" name="form[]" value="zakirsoft.20@g|" placeholder="Your Email" class="comment-article__input">
 								</div>
-								<div class="comment-article__group">
-									<label class="comment-article__label" for="textarea">Message</label>
-									<textarea id="textarea" required placeholder="Write your comment here…" class="comment-article__textarea"></textarea>
-								</div>
-								<div class="comment-article__group">
-									<input id="checkbox" type="checkbox" value="0" name="form[]" class="comment-article__checkbox">
-									<label class="comment-article__label" for="checkbox">Save my name and email in this browser for the next time I comment.</label>
-								</div>
-								<button type="submit" class="comment-article__btn">Post Comments</button>
 							</fieldset>
+							<div class="comment-article__group">
+								<label class="comment-article__label" for="textarea">Message</label>
+								<textarea id="textarea" required placeholder="Write your comment here…" class="comment-article__textarea"></textarea>
+							</div>
+							<div class="comment-article__group">
+								<input id="checkbox" type="checkbox" value="0" name="form[]" class="comment-article__checkbox">
+								<label class="comment-article__label" for="checkbox">Save my name and email in this browser for the next time I comment.</label>
+							</div>
+							<button type="submit" class="comment-article__btn">Post Comments</button>
 						</form>
 					</section>
 					<section class="article__comments comments-article">
@@ -287,6 +288,7 @@
 						</ul>
 					</section>
 					<section class="aside__added recently-added">
+						<h2 class="recently-added__title">Recently Added</h2>
 						<ul class="recently-added__list">
 							<li class="recently-added__item">
 								<article class="recently-added__blog added-blog">
