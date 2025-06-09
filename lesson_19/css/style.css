@@ -68,7 +68,7 @@ main {
 }
 
 .hero__container>* {
-	height: 6.25rem;
+	min-height: 6.25rem;
 	border: 0.0625rem solid brown;
 	text-align: center;
 }
@@ -118,7 +118,7 @@ main {
 .minmax {
 	position: relative;
 	align-content: center;
-	width: min(800px, 100%);
+	width: min(50rem, 100%);
 }
 
 .minmax__body{
@@ -134,3 +134,27 @@ main {
 }
 
 
+.vertical {
+	background-color: #000;
+}
+.vertical__body {
+	writing-mode: vertical-lr;
+	text-orientation: upright;
+	width: 100%;
+	padding-inline-start: 1.25rem;
+	text-align: left;
+	color: rgb(47, 255, 47);
+}
+
+
+.clip-path {
+	display: flex;
+	justify-content: center;
+	background-color: #bc8f8f;
+}
+.clip-path__body {
+	height: 100px;
+	width: 100px;
+	background-color: #df00c9;
+	clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
