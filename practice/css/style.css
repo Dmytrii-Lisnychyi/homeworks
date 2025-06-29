@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::before,
 *::after {
@@ -44,12 +45,14 @@ h6 {
   font-size: inherit;
 }
 
-body {
-  background-color: rgb(255, 251, 141);
+.lock body {
+  overflow: hidden;
+  -ms-touch-action: none;
+      touch-action: none;
+  -ms-scroll-chaining: none;
+      overscroll-behavior: none;
 }
-
 .wrapper {
-  overflow: clip;
   min-height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -58,59 +61,27 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  overflow: hidden;
 }
-
-main {
+.wrapper > main {
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+.wrapper > * {
+  min-width: 0;
 }
 
+/*
+(i) Стили будут применяться ко 
+всем классам содержащим *__container
+Например header__container, main__container и т.д.
+Снипет (HTML): cnt
+*/
 [class*=__container] {
-  max-width: toRem(1349);
+  max-width: 73.125rem;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   margin: 0 auto;
-  padding: 0 toRem(15);
-}
-
-header, footer {
-  text-align: center;
-  padding: 1.25rem 0;
-  font-size: 1.375rem;
-  font-weight: 600;
-  background-color: lightgray;
-}
-
-.grid {
-  padding: 1.875rem;
-}
-.grid__container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
-  -webkit-column-gap: clamp(0.625rem, 3.959vw - 1.275rem, 2.063rem);
-     -moz-column-gap: clamp(0.625rem, 3.959vw - 1.275rem, 2.063rem);
-          column-gap: clamp(0.625rem, 3.959vw - 1.275rem, 2.063rem);
-  row-gap: clamp(0.5rem, 2.754vw - 0.822rem, 1.5rem);
-}
-.grid__item:nth-child(17n+1), .grid__item:nth-child(17n+4), .grid__item:nth-child(17n+6), .grid__item:nth-child(17n+9), .grid__item:nth-child(17n+17) {
-  grid-row: span 2;
-  background-color: rgb(0, 183, 255);
-}
-.grid__item:nth-child(17n+2), .grid__item:nth-child(17n+5), .grid__item:nth-child(17n+8), .grid__item:nth-child(17n+13), .grid__item:nth-child(17n+15) {
-  grid-row: span 3;
-  background-color: rgb(157, 35, 120);
-}
-.grid__item:nth-child(17n+3), .grid__item:nth-child(17n+7), .grid__item:nth-child(17n+10), .grid__item:nth-child(17n+11), .grid__item:nth-child(17n+14), .grid__item:nth-child(17n+16) {
-  grid-row: span 2;
-  background-color: rgb(4, 149, 26);
-}
-.grid__item:nth-child(17n+12) {
-  grid-row: span 5;
-  background-color: #895200;
-}
-
-@media (min-width: 917.98px) {
-  .grid__container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-  }
+  padding: 0 0.9375rem;
 }
