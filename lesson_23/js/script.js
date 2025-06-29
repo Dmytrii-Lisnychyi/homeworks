@@ -63,17 +63,17 @@
 // Дано в html: текст, далі кнопка з класом button.
 // Треба прокрутити скрол сторінки до кнопки
 
-// const button = document.querySelector(`.button`)
-// if (button) {
-// 	function scrollToBlock() {
-// 		button.scrollIntoView({
-// 			block: "center",
-// 			inline: "nearest",
-// 			behavior: "smooth"
-// 		})
-// 	}
-// 	scrollToBlock()
-// }
+const button = document.querySelector(`.button`)
+if (button) {
+	function scrollToBlock() {
+		button.scrollIntoView({
+			block: "center",
+			inline: "nearest",
+			behavior: "smooth"
+		})
+	}
+	scrollToBlock()
+}
 
 
 
